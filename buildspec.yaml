@@ -1,0 +1,18 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+        nodejs: 10
+        
+  build:
+    commands:
+      - npm install
+      - npm run build
+      
+
+
+artifacts:
+  name: $PipelineName-buildpackage-frontend-$(date +%Y-%m-%d) 
+  files:
+    - '**/*'
+  base-directory: 'dist'
