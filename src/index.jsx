@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-const AmazonCognitoIdentity = require("./amazon-cognito-auth.js");
+const AmazonCognitoIdentity = require("amazon-cognito-auth-js");
 
 const apiURL = process.env.ApiRoot;
 
