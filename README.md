@@ -13,7 +13,23 @@ These environmental variables supply Amazon Cognito details and will be used by 
     npm start
 
 
-Once the app is running, you need to press the button "Sin-in to get the weather". The app will redirect you to Amazon hosted UI. Create a new user in Cognito user pool, if you havn't yet, so you can sign-in. Then you can see weather report; something like this:
+Once the app is running, you need to press the button "Sin-in to get the weather":
+
+![Sign in button](https://user-images.githubusercontent.com/21277296/77577864-3a6a5c00-6ee0-11ea-845f-b5353bfdb07a.png)
+
+
+The app will redirect you to Cognito hosted UI. For troubleshooting, you can also access hosted UI [manually](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-integration.html) with following URL:
+
+    https://<your_domain>/login?response_type=code&client_id=<your_app_client_id>&redirect_uri=<your_callback_url>
+
+You can get your domain, user pool app client id and callback url from cloudformation output of the app created [by backend pipeline](https://github.com/azarboon/serverless-ops-boilerplate) (i.e. `app/template.yaml`).
+
+Create a new user in Cognito user pool, if you havn't yet, so you can sign-in:
+
+![Cognito hosted UI](https://user-images.githubusercontent.com/21277296/77577849-33dbe480-6ee0-11ea-958f-8544a68b5f02.png)
+
+
+ Then you can see weather report; something like this:
 
 ![Weather report after sign in](https://user-images.githubusercontent.com/21277296/77543316-31619680-6eb0-11ea-9e95-c491d943fe7d.png)
 
