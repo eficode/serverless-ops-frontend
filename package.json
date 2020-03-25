@@ -1,13 +1,13 @@
 {
-  "name": "weatherapp-frontend",
+  "name": "serverless-ops-boilerplate",
   "version": "0.0.1",
-  "description": "Weatherapp exercise frontend",
+  "description": "Production Ready Serverless Ops Boilerplate the DevOps Way",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mrako/weatherapp.git"
+    "url": "https://github.com/azarboon/serverless-ops-frontend"
   },
-  "author": "Marko Klemetti <marko.klemetti@gmail.com>",
-  "license": "UNLICENSED",
+  "author": "Mahdi Azarboon m.azarboon /at/ gmail.com",
+  "license": "MIT License",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --config webpack.config.js --progress --inline --colors",
     "lint": "node_modules/.bin/eslint --ext .js --ext .jsx . --fix",
@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "amazon-cognito-auth-js": "^1.3.3",
-    "axios": "^0.19.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
