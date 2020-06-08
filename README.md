@@ -12,7 +12,7 @@ These environmental variables supply Amazon Cognito details and will be used by 
 
     npm run start
 
-Once the app is running, you need to press the button "Sin-in to get the weather":
+Once the app is running, you need to press the button "Sign-in to get the weather":
 
 ![Sign in button](https://user-images.githubusercontent.com/21277296/77577864-3a6a5c00-6ee0-11ea-845f-b5353bfdb07a.png)
 
