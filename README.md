@@ -8,10 +8,9 @@ This is the second part of [the boilerplate](https://github.com/eficode/serverle
 
 These environmental variables supply Amazon Cognito details and will be used by `initCognitoSDK()` located `./src/index.jsx` file. If you follow the instructions on [the boilerplate](https://github.com/eficode/serverless-ops-boilerplate), the template creates frontend pipeline and supplies these environmental variables into the corresponding Codebuild project. So you don't need to do anything manual. However, you can set these variables on your machine to test the authentication locally. To do that, you need to set RedirectUriSignIn, RedirectUriSignOut to `http://localhost:8000`. Also you need to whitelist `http://localhost:8000` in [Callback URL and Logout URL of your Cognito User Pool app](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-idp-settings.html). Then you can run the application and it should work:
 
-    npm install
+    yarn install
 
-    npm start
-
+    yarn start
 
 Once the app is running, you need to press the button "Sin-in to get the weather":
 
