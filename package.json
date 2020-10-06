@@ -7,7 +7,7 @@
     "url": "https://github.com/eficode/serverless-ops-frontend"
   },
   "author": "Mahdi Azarboon m.azarboon /at/ gmail.com",
-  "license": "MIT License",
+  "license": "MIT",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --config webpack.config.js --progress --inline --colors",
     "lint": "node_modules/.bin/eslint --ext .js --ext .jsx . --fix",
